@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/forarray
+# catalog-date 2008-08-19 20:38:14 +0200
+# catalog-license lppl
+# catalog-version 1.01
 Name:		texlive-forarray
 Version:	1.01
 Release:	1
@@ -53,6 +59,7 @@ lists and arrays.
 %doc %{_texmfdistdir}/doc/latex/forarray/forarray.pdf
 #- source
 %doc %{_texmfdistdir}/source/latex/forarray/forarray.dtx
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -63,3 +70,5 @@ lists and arrays.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
