@@ -6,7 +6,7 @@
 # catalog-version 1.01
 Name:		texlive-forarray
 Version:	1.01
-Release:	6
+Release:	7
 Summary:	Using array structures in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/forarray
